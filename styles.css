@@ -385,10 +385,19 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--beige);
   text-shadow: 0 1px 4px rgba(0,0,0,0.6);
   letter-spacing: 0.2em;
+  display: none; /* masqué sur desktop, affiché en responsive */
 }
 
 @media (max-width: 768px) {
-  .scroll-hint { display: none; }
+  .scroll-hint {
+    display: block;
+    animation: scroll-hint-pulse 2s ease-in-out infinite;
+  }
+}
+
+@keyframes scroll-hint-pulse {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
 }
 
 /* ===== BOUTONS ===== */
