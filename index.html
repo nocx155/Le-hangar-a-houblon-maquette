@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Hangar à Houblon | Bar festif à Suippes</title>
+  <meta name="description" content="Le Hangar à Houblon, le bar à Suippes où se retrouver entre amis. Soirées DJ, bières sélectionnées. Sortir à Suippes.">
+  <link rel="preload" href="assets/logo.png" as="image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation horizontale -->
+  <nav class="nav-main" id="navMain">
+    <a href="#panel-1" class="nav-main__dot active" data-panel="1" aria-label="Accueil"></a>
+    <a href="#panel-2" class="nav-main__dot" data-panel="2" aria-label="Le lieu"></a>
+    <a href="#panel-3" class="nav-main__dot" data-panel="3" aria-label="Ambiance"></a>
+    <a href="#panel-4" class="nav-main__dot" data-panel="4" aria-label="Soirées"></a>
+    <a href="#panel-5" class="nav-main__dot" data-panel="5" aria-label="Privatiser"></a>
+    <a href="#panel-6" class="nav-main__dot" data-panel="6" aria-label="Infos"></a>
+  </nav>
+
+  <!-- Header fixe minimal -->
+  <header class="header" id="header">
+    <a href="#panel-1" class="header__logo">
+      <img src="assets/logo.png" alt="Le Hangar à Houblon" class="header__logo-img" width="40" height="40" fetchpriority="high">
+    </a>
+    <div class="header__links">
+      <a href="#panel-2">Le Hangar</a>
+      <a href="#panel-4">Soirées</a>
+      <a href="#panel-5">Privatiser</a>
+      <a href="#panel-6">Avis</a>
+      <a href="#panel-7">Infos</a>
+    </div>
+    <button class="header__menu" id="menuBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Scroll horizontal - les "zones" du bar -->
+  <main class="scroll-h" id="scrollContainer">
+    <div class="scroll-inner">
+    <!-- Panel 1: Hero -->
+    <section class="panel panel--hero" id="panel-1">
+      <div class="panel__bg" style="background-image: url('assets/hero-convivial.jpg');"></div>
+      <div class="panel__overlay"></div>
+      <div class="panel__content panel__content--center">
+        <div class="hero-logo-wrap">
+          <img src="assets/logo.png" alt="Le Hangar à Houblon" class="hero-logo" width="320" height="320" fetchpriority="high">
+        </div>
+        <h1 class="hero-title">Le Hangar à Houblon</h1>
+        <p class="hero-tagline">Le bar de Suippes où l'on se retrouve pour partager une bière, écouter du bon son et passer des soirées qui comptent.</p>
+        <p class="hero-text">Un lieu de vie pour l'ambiance autant que pour les rencontres.</p>
+        <div class="hero-actions">
+          <a href="#panel-4" class="btn btn--gold">Voir les soirées</a>
+          <a href="#panel-5" class="btn btn--ghost">Privatiser le hangar</a>
+        </div>
+        <div class="hero-avis">
+          <h3 class="hero-avis__title">Ils parlent du Hangar</h3>
+          <div class="hero-avis__list">
+            <article class="google-card">
+              <div class="google-card__header">
+                <div class="google-card__profile">
+                  <div class="google-card__avatar" aria-hidden="true">M</div>
+                  <div>
+                    <span class="google-card__name">Marie D.</span>
+                    <div class="google-card__stars" aria-label="5 étoiles">★★★★★</div>
+                  </div>
+                </div>
+                <span class="google-card__source">Google</span>
+              </div>
+              <p class="google-card__text">Super ambiance et patrons sympas.</p>
+              <span class="google-card__date">Il y a 3 mois</span>
+            </article>
+            <article class="google-card">
+              <div class="google-card__header">
+                <div class="google-card__profile">
+                  <div class="google-card__avatar" aria-hidden="true">T</div>
+                  <div>
+                    <span class="google-card__name">Thomas L.</span>
+                    <div class="google-card__stars" aria-label="5 étoiles">★★★★★</div>
+                  </div>
+                </div>
+                <span class="google-card__source">Google</span>
+              </div>
+              <p class="google-card__text">Un vrai lieu de vie dans le coin.</p>
+              <span class="google-card__date">Il y a 1 mois</span>
+            </article>
+            <article class="google-card">
+              <div class="google-card__header">
+                <div class="google-card__profile">
+                  <div class="google-card__avatar" aria-hidden="true">J</div>
+                  <div>
+                    <span class="google-card__name">Julie M.</span>
+                    <div class="google-card__stars" aria-label="5 étoiles">★★★★★</div>
+                  </div>
+                </div>
+                <span class="google-card__source">Google</span>
+              </div>
+              <p class="google-card__text">Incroyable lors des soirées.</p>
+              <span class="google-card__date">Il y a 2 semaines</span>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint">← Glissez →</div>
+    </section>
+
+    <!-- Panel 2: Concept bento -->
+    <section class="panel" id="panel-2">
+      <div class="bento">
+        <div class="bento__cell bento__cell--wide bento__cell--tall bento__cell--img bento__cell--hero" style="background-image: url('assets/gallery-soiree-convivial.jpg');">
+          <div class="bento__content bento__content--overlay">
+            <h2>Un lieu unique pour se retrouver à Suippes</h2>
+            <p>Un bar convivial où les habitants du coin viennent partager une bière et passer un bon moment.</p>
+            <p>Soirées DJ, événements et moments de convivialité rythment régulièrement la vie du lieu.</p>
+            <p>Rendez-vous incontournable pour boire un verre, rencontrer du monde ou profiter d'une soirée animée.</p>
+          </div>
+        </div>
+        <div class="bento__cell">
+          <div class="bento__content bento__content--icon">
+            <span>🍺</span>
+            <h3>Bières sélectionnées</h3>
+            <p>Une sélection à partager dans une ambiance simple.</p>
+          </div>
+        </div>
+        <div class="bento__cell">
+          <div class="bento__content bento__content--icon">
+            <span>🎧</span>
+            <h3>Soirées & événements</h3>
+            <p>DJ sets et soirées thématiques chaque semaine.</p>
+          </div>
+        </div>
+        <div class="bento__cell">
+          <div class="bento__content bento__content--icon">
+            <span>🤝</span>
+            <h3>Lieu de rencontre</h3>
+            <p>Où discuter et passer un bon moment.</p>
+          </div>
+        </div>
+        <div class="bento__cell bento__cell--img" style="background-image: url('assets/bento-convivial.jpg');"></div>
+      </div>
+    </section>
+
+    <!-- Panel 3: Galerie immersive -->
+    <section class="panel" id="panel-3">
+      <div class="gallery-mosaic">
+        <div class="gallery-mosaic__item gallery-mosaic__item--tall" style="background-image: url('assets/gallery-soiree-convivial.jpg');"></div>
+        <div class="gallery-mosaic__item" style="background-image: url('assets/gallery-dj-convivial.jpg');"></div>
+        <div class="gallery-mosaic__item gallery-mosaic__item--wide" style="background-image: url('assets/gallery-concert-convivial.jpg');"></div>
+        <div class="gallery-mosaic__item" style="background-image: url('assets/gallery-bieres-convivial.jpg');"></div>
+        <div class="gallery-mosaic__item" style="background-image: url('assets/gallery-comptoir-convivial.jpg');"></div>
+      </div>
+      <div class="panel-ambiance__intro">
+        <h2>L'ambiance du Hangar</h2>
+        <p>Chaque soirée a son énergie. Musique, discussions et rencontres improvisées.</p>
+        <p>On y vient pour se détendre comme pour profiter d'une vraie soirée.</p>
+      </div>
+    </section>
+
+    <!-- Panel 4: Événements -->
+    <section class="panel panel--events" id="panel-4">
+      <div class="panel__bg panel__bg--events" style="background-image: url('assets/gallery-dj-convivial.jpg');" aria-hidden="true"></div>
+      <div class="panel__overlay panel__overlay--dark"></div>
+      <div class="events-layout">
+        <h2 class="events-title">Les prochaines soirées</h2>
+        <p class="events-intro">Chaque semaine réserve son lot de bonnes surprises.</p>
+        <div class="events-cards">
+          <article class="event-block">
+            <h3>Soirée DJ</h3>
+            <p>Une soirée rythmée par les meilleurs sons pour lancer le week-end.</p>
+          </article>
+          <article class="event-block">
+            <h3>Blind Test du Hangar</h3>
+            <p>Testez votre culture musicale.</p>
+          </article>
+          <article class="event-block">
+            <h3>Soirée années 80</h3>
+            <p>Les classiques qui font chanter et danser toute la soirée.</p>
+          </article>
+        </div>
+        <a href="#panel-6" class="btn btn--gold events-cta">Voir les événements</a>
+      </div>
+    </section>
+
+    <!-- Panel 5: Privatisation -->
+    <section class="panel panel--privatise" id="panel-5">
+      <div class="panel__bg panel__bg--privatise" style="background-image: url('assets/gallery-concert-convivial.jpg');" aria-hidden="true"></div>
+      <div class="panel__overlay panel__overlay--strong"></div>
+      <div class="privatise-block">
+        <h2>Privatiser le Hangar</h2>
+        <p>Le lieu peut être privatisé pour partager un moment unique. Bar, musique et ambiance inclus.</p>
+        <ul class="privatise-occasions">
+          <li>Anniversaires</li>
+          <li>Soirées entre amis</li>
+          <li>Événements associatifs</li>
+          <li>Fêtes entre collègues</li>
+        </ul>
+        <a href="mailto:contact@hangarahoublon.fr?subject=Privatisation" class="btn btn--gold">Faire une demande</a>
+      </div>
+    </section>
+
+    <!-- Panel 6: Infos (dernière page) -->
+    <section class="panel panel--infos" id="panel-6">
+      <div class="panel__bg panel__bg--infos" style="background-image: url('assets/gallery-comptoir-convivial.jpg');" aria-hidden="true"></div>
+      <div class="panel__overlay panel__overlay--infos"></div>
+      <div class="panel6__content">
+        <div class="infos-card">
+          <h2 class="infos-card__title">Infos pratiques</h2>
+          <p class="infos-card__intro">Retrouvez-nous à Suippes.</p>
+          <div class="infos-card__block">
+            <strong>Adresse</strong>
+            <p>20 chemin de la Louvière<br>51600 Suippes</p>
+          </div>
+          <div class="infos-card__block">
+            <strong>Horaires</strong>
+            <p>Jeudi : 18h – 00h<br>Vendredi : 18h – 02h<br>Samedi : 18h – 02h</p>
+          </div>
+        </div>
+        <div class="footer-map">
+          <iframe src="https://www.google.com/maps?q=20+chemin+de+la+Louvi%C3%A8re+51600+Suippes&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Carte Le Hangar à Houblon"></iframe>
+        </div>
+      </div>
+      <footer class="footer">
+        <img src="assets/logo.png" alt="Le Hangar à Houblon" class="footer-logo" width="60" height="60" loading="lazy">
+        <p class="footer-name">Le Hangar à Houblon</p>
+        <p class="footer-tagline">Bar convivial à Suippes</p>
+        <p class="footer-social-text">Suivez les prochaines soirées sur nos réseaux.</p>
+        <div class="footer-social">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+        </div>
+        <p class="footer-copy">© Le Hangar à Houblon</p>
+      </footer>
+    </section>
+    </div>
+  </main>
+
+  <!-- Menu mobile -->
+  <div class="menu-overlay" id="menuOverlay">
+    <nav class="menu-overlay__nav">
+      <a href="#panel-1">Accueil</a>
+      <a href="#panel-2">Le Hangar</a>
+      <a href="#panel-3">Ambiance</a>
+      <a href="#panel-4">Soirées</a>
+      <a href="#panel-5">Privatiser</a>
+      <a href="#panel-6">Infos</a>
+    </nav>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
